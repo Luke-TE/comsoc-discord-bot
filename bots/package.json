@@ -1,0 +1,8 @@
+{
+	"name":"communist-regime",
+	"version":"0.05",
+	"description":"We will not starve",
+	"main":"bot.js",
+	"author":"Karl Marx",
+	"dependencies":{}
+}
