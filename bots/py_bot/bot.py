@@ -2,8 +2,8 @@ import discord
 import json
 
 auth_path = "../auth.json"
-package_path = "/../package.json"
-roles_path = "/../roles.json"
+package_path = "../package.json"
+roles_path = "../roles.json"
 
 class Regime(discord.Client):
     def __init__(self, roles):
