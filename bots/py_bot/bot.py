@@ -7,6 +7,7 @@ roles_path = "../roles.json"
 
 class Regime(discord.Client):
     def __init__(self, roles):
+        super(Regime, self).__init__()
         self.roles = roles
 
     async def on_ready(self):
