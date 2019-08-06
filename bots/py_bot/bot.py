@@ -1,9 +1,5 @@
 import discord
-import json
 
-auth_path = "../auth.json"
-package_path = "../package.json"
-roles_path = "../roles.json"
 
 class Regime(discord.Client):
     def __init__(self, roles):
@@ -31,14 +27,4 @@ class Regime(discord.Client):
         scum_id = self.roles["capitalist scum"]
         scum_role = member.guild.get_role(scum_id)
         await member.add_roles(scum_role, reason=scum_reason)
-
-if __name__ == "__main__":
-    with open(roles_path) as roles_json:
-        roles = json.load(roles_json)
-
-    bot = Regime(roles)
-
-    with open(auth_path) as auth_json:
-        auth_data = json.load(auth_json)
-        bot.run(auth_data["token"])
 
