@@ -6,6 +6,9 @@ class Regime(discord.Client):
         super(Regime, self).__init__()
         self.roles = roles
 
+    def get_role(self, role_name: str):
+        return self.roles[role_name]
+
     async def on_ready(self):
         print("History repeats itself, first as a tragedy, second as farce.")
     
@@ -24,7 +27,7 @@ class Regime(discord.Client):
 
     async def on_member_join(self, member):
         scum_reason = "You've been given the role \"Capitalist Scum\" for invading the motherland!"
-        scum_id = self.roles["capitalist scum"]
+        scum_id = self.get_role("capitalist scum")
         scum_role = member.guild.get_role(scum_id)
         await member.add_roles(scum_role, reason=scum_reason)
 

@@ -25,3 +25,5 @@ var/
 auth.json
 
 
+# IDEA
+.idea/
