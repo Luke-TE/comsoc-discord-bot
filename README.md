@@ -6,18 +6,13 @@ This bot is used in a satirical Discord server based around communism and commun
 ## PSA: This bot does not represent my or any of the developers' beliefs and is meant primarily as a humorous coding project.  
 
 # Linux Installation instructions
-Install Python 3.7
 sudo apt install python3.7
-Install Pip, Python's package manager
 sudo apt install python-pip
-
 python3.7 -m pip install virtualenv
 virtualenv bot-env
 source bot-env/bin/activate
 
-python3.7 -m pip install discord
-python3.7 -m pip install pytest
-python3.7 -m pip install pytest-asyncio
+python3.7 -m pip install -r requirements.txt
 
 deactivate
 
@@ -41,3 +36,7 @@ Travis CI deploys this to Heroku and a pull request to master can be made if so 
 Possibly add test for new feature
 
 https://discordpy.readthedocs.io/en/latest/api.html#member
+
+when github actions is added, might migrate to that
+
+only works with python 3.7
