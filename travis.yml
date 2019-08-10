@@ -1,11 +1,12 @@
+dist: xenial
 language: python
 python:
-        - "2.7" 
-        - "3.6"
-        - "3.6-dev"
+        - "3.7"
+        - "3.7-dev"
+        - "3.8-dev"
 
 install:
-        - pip3 install -r requirements.txt
+        - python3.7 -m pip3 install -r requirements.txt
 
 script:
-        - pytest
+        - python3.7 -m pytest
