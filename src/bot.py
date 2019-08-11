@@ -20,7 +20,8 @@ class Regime(discord.Client):
 
         if message.content.startswith("capitalism"):
             await message.guild.kick(message.author, reason="Capitalist scum aren't welcome here >:(")
-            await message.channel.send("{0} has been removed for treason.".format(message.author.nick))
+            await message.channel.send(f"{message.author.nick} has been removed for treason.")
+            print(f"{message.author.nick} has been kicked from the server.")
 
         if message.content.startswith('ping'):
             await message.channel.send('pong')
