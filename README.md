@@ -40,4 +40,11 @@ Travis CI deploys this to Heroku and a pull request to master can be made if so 
 
 Possibly add test for new feature
 
+Discord.py API docs
 https://discordpy.readthedocs.io/en/latest/api.html#member
+
+Pytest-asyncio API docs
+https://github.com/pytest-dev/pytest-asyncio
+
+Asynctest API docs
+https://github.com/Martiusweb/asynctest
