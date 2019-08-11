@@ -33,13 +33,13 @@ deactivate
 
 ```
 
-# Running the program
+### Running the program
 ```run.py``` can only be run on the Heroku server as it requires the bot token and the sentry connection data.
 ```
 python3.7 src/run.py
 ```
 
-### Adding a new feature:
+## Adding a new feature:
 - Create a feature branch from the dev branch
 - Code the feature on the new branch  
 - (Optional) Add a test for the new feature
@@ -47,7 +47,7 @@ python3.7 src/run.py
 - Travis CI builds and tests the pull request
 - If the build passes, hooray! A new feature has implemented!
 
-### Deploying a new version to the server:
+## Deploying a new version to the server:
 - Create a pull request to merge the dev branch to the deploy branch
 - Travis CI builds and tests the pull request
 - If the build passes and someone else has approved the pull request, hooray! A new release version has been made! This is automatically deployed to Heroku! If there are any errors with it, Sentry sends an email alert.
