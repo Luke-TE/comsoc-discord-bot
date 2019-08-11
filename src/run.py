@@ -2,7 +2,6 @@ import json, os
 from bot import Regime
 
 
-package_path = "data/package.json"
 roles_path = "data/roles.json"
 
 if __name__ == "__main__":
