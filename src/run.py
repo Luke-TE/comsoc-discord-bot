@@ -1,4 +1,6 @@
-import json, os
+import json
+import os
+import sentry_sdk
 from bot import Regime
 
 
