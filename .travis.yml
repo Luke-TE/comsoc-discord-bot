@@ -7,4 +7,7 @@ install:
         - python3.7 -m pip install -r requirements.txt
 
 script:
-        - python3.7 -m pytest src
+        - python3.7 -m pytest src      
+
+notifications:
+        webhooks: https://discordapp.com/api/webhooks/610112478826987520/eqKv77BjR-Qo-QGl7RqfpXbxbEm5oTWASJHuBAXeeO8UbGw2kTUqmdMwqERn2XRCscAO
