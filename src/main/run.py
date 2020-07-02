@@ -1,7 +1,7 @@
 import json
 import os
 import sentry_sdk
-from bot import Regime
+from main.bot import Regime
 
 
 roles_path = "data/roles.json"

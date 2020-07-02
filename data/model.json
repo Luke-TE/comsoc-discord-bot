@@ -1,0 +1,55 @@
+{
+  "commands" : {
+    "ping": {
+      "parameters": [],
+      "actions": [
+        {
+          "name": "log",
+          "text": "Someone pinged!"
+        },
+        {
+          "name": "message",
+          "text": "pong"
+        }
+      ]
+    },
+    "comrade": {
+      "parameters": [
+        "user"
+      ],
+      "actions": [
+        {
+          "name": "role",
+          "text": "You are part of the motherland now.",
+          "role": "comrade"
+        },
+        {
+          "name": "message",
+          "text": "$user has been made a comrade! Welcome!."
+        }
+      ]
+    }
+  },
+  "listeners" : {
+    "ready": [
+      {
+          "name": "log",
+          "text": "Bot has started."
+      },
+      {
+        "name": "message",
+        "text": "History repeats itself, first as a tragedy, second as farce."
+      }
+    ],
+    "member_join": [
+      {
+          "name": "role",
+          "text": "You've been given the role \"Capitalist Scum\" for invading the motherland!",
+          "role": "capitalist scum"
+      }
+    ]
+  },
+  "banned_phrases" : [
+    "I love capitalism", "communism sucks", "starving", "my", "mine"
+  ]
+}

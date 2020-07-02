@@ -3,7 +3,7 @@ from unittest.mock import MagicMock
 
 import pytest
 import discord
-from bot import Regime
+from main.bot import Regime
 from asynctest import CoroutineMock
 
 
