@@ -1,4 +1,4 @@
-# ComSoc Discord Bot
+# ComSoc Server Discord Bot
 A satirical discord bot that conveys the themes of communism and the Soviet Union in an amusing manner.
 This bot is used in a satirical Discord server based around communism and communist figures.
 
