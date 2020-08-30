@@ -1,5 +1,5 @@
 # ComSoc Server Discord Bot
-A satirical discord bot that conveys the themes of communism and the Soviet Union in an amusing manner.
+A satirical discord bot that conveys themes of communism and the Soviet Union in an amusing manner.
 This bot is used in a satirical Discord server based around communism and communist figures.
 
 The bot uses Travis CI, Heroku and Sentry. Travis CI builds and tests the core functionality of the bot. The bot is deployed on Heroku and Sentry is used for error tracking.
